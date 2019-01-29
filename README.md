@@ -4,7 +4,7 @@ A fork of [https://hub.docker.com/r/richarvey/nginx-php-fpm/](https://hub.docker
 
 This is a Dockerfile/image to build a container for nginx and php-fpm, with a focus on being used behind a proxy and to be able to log to stdout without the php-fpm prefix.
 
-It includes logging nginx logs for ingestion into analytics services.
+It includes preparing nginx logs for ingestion into analytics services by formatting the logs as json.
 
 No access logging when reaching `/ping`, to prevent redundant logging of successful health checks.
 
@@ -13,7 +13,7 @@ If you have improvements or suggestions please open an issue or pull request on 
 ### Versioning
 | Docker Tag | Git Release | Nginx Version | PHP Version | Alpine Version |
 |-----|-------|-----|--------|--------|
-| latest | Master Branch |1.14.0 | 7.3.1 | 3.8 |
+| latest/1.0.0 | Master Branch |1.14.0 | 7.3.1 | 3.8 |
 
 For other tags please see: [versioning](https://github.com/vegandev/nginx-php-fpm/blob/master/docs/versioning.md)
 
